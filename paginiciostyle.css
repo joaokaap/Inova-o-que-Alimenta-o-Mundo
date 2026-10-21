@@ -1,0 +1,509 @@
+/* ================================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f8f3;
+    color: #173d28;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+/* ================================
+   MENU DE NAVEGAÇÃO
+================================ */
+
+nav.button {
+    width: 100%;
+    min-height: 65px;
+
+    background-color: #0d542d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 45px;
+
+    padding: 10px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav.button button {
+    border: none;
+    background: transparent;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+nav.button button:hover {
+    color: #b9e6c7;
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   SEÇÕES
+================================ */
+
+section {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 70px 50px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 70px;
+
+    min-height: 500px;
+}
+
+
+/* ================================
+   TEXTO
+================================ */
+
+.texto,
+section > div:first-child {
+    flex: 1;
+
+    min-width: 0;
+}
+
+section h1 {
+    color: #104d2b;
+
+    font-size: clamp(30px, 4vw, 48px);
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #333;
+
+    font-size: clamp(16px, 1.4vw, 19px);
+
+    line-height: 1.7;
+
+    text-align: justify;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   IMAGENS
+================================ */
+
+.imagem {
+    flex: 1;
+
+    width: 100%;
+    max-width: 540px;
+
+    height: 350px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    flex-shrink: 0;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    transition: transform 0.4s ease;
+}
+
+.imagem img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ================================
+   PRIMEIRA SEÇÃO
+   TEXTO ESQUERDA / IMAGEM DIREITA
+================================ */
+
+.secao.imagem-direita {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ================================
+   SEGUNDA SEÇÃO
+   TEXTO DIREITA / IMAGEM ESQUERDA
+================================ */
+
+.secao.imagem-esquerda {
+    display: flex;
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ================================
+   CARROSSEL
+================================ */
+
+.carousel {
+    width: 100%;
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+}
+
+.carousel-inner {
+    width: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100% !important;
+
+    height: 390px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+
+/* Área completa do carrossel */
+
+.carousel.slide {
+    width: 100%;
+    max-width: 620px;
+}
+
+
+/* Botões do carrossel */
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+
+/* Indicadores */
+
+.carousel-indicators {
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   SEÇÃO DE TECNOLOGIAS
+================================ */
+
+.secao.carrossel-direita {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+.secao.carrossel-direita .texto {
+    flex: 1;
+}
+
+.secao.carrossel-direita .carousel {
+    flex: 1;
+}
+
+
+/* ================================
+   SEÇÃO SUSTENTABILIDADE
+================================ */
+
+section:last-of-type {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 70px;
+}
+
+section:last-of-type .texto {
+    flex: 1;
+}
+
+section:last-of-type .imagem {
+    flex: 1;
+}
+
+
+/* ================================
+   ESPAÇAMENTO ENTRE SEÇÕES
+================================ */
+
+section + br {
+    display: none;
+}
+
+section {
+    border-bottom: 1px solid rgba(16, 77, 43, 0.08);
+}
+
+
+/* ================================
+   TABLETS
+================================ */
+
+@media (max-width: 900px) {
+
+    nav.button {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        min-height: 65px;
+    }
+
+    nav.button button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    section {
+        padding: 55px 35px;
+
+        gap: 40px;
+    }
+
+    section h1 {
+        font-size: 34px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+
+    .imagem {
+        max-width: 430px;
+        height: 300px;
+    }
+
+    .carousel.slide {
+        max-width: 500px;
+    }
+
+    .carousel-item img {
+        height: 320px;
+    }
+}
+
+
+/* ================================
+   CELULARES
+================================ */
+
+@media (max-width: 700px) {
+
+    nav.button {
+        position: relative;
+
+        gap: 5px;
+
+        padding: 10px;
+
+        justify-content: center;
+    }
+
+    nav.button button {
+        font-size: 13px;
+
+        padding: 7px 8px;
+    }
+
+
+    /* Todas as seções passam para uma coluna */
+
+    section,
+    .secao.imagem-direita,
+    .secao.imagem-esquerda,
+    .secao.carrossel-direita,
+    section:last-of-type {
+
+        flex-direction: column;
+
+        width: 100%;
+
+        padding: 45px 20px;
+
+        gap: 30px;
+
+        min-height: auto;
+
+        text-align: center;
+    }
+
+
+    /* Texto */
+
+    .texto,
+    section > div:first-child {
+
+        width: 100%;
+
+        flex: none;
+    }
+
+    section h1 {
+        font-size: 30px;
+
+        text-align: center;
+    }
+
+    section p {
+        font-size: 16px;
+
+        text-align: justify;
+    }
+
+
+    /* Imagens */
+
+    .imagem {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        height: 280px;
+    }
+
+    .imagem img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+
+    /* Carrossel */
+
+    .carousel,
+    .carousel.slide {
+
+        width: 100%;
+
+        max-width: 100%;
+    }
+
+    .carousel-item img {
+
+        width: 100% !important;
+
+        height: 280px;
+
+        object-fit: cover;
+
+        border-radius: 12px;
+    }
+}
+
+
+/* ================================
+   CELULARES PEQUENOS
+================================ */
+
+@media (max-width: 480px) {
+
+    nav.button {
+        gap: 2px;
+
+        padding: 8px 5px;
+    }
+
+    nav.button button {
+        font-size: 11px;
+
+        padding: 6px 5px;
+    }
+
+
+    section {
+        padding: 35px 15px;
+    }
+
+    section h1 {
+        font-size: 26px;
+    }
+
+    section p {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    .imagem {
+        height: 230px;
+    }
+
+    .carousel-item img {
+        height: 230px;
+    }
+}
