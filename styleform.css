@@ -1,0 +1,226 @@
+/* ================================
+   MENU DE NAVEGAÇÃO
+================================ */
+
+nav.button {
+    width: 100%;
+    min-height: 65px;
+
+    background-color: #0d542d;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 45px;
+
+    padding: 10px 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav.button button {
+    border: none;
+    background: transparent;
+
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+nav.button button:hover {
+    color: #b9e6c7;
+    transform: translateY(-2px);
+}
+
+/* ===== RESET ===== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== FUNDO DA PÁGINA ===== */
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    background: linear-gradient(135deg, #126302, #2eb903);
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+/* ===== TÍTULO ===== */
+
+h1{
+    color: white;
+
+    margin-bottom: 25px;
+
+    font-size: 38px;
+
+    letter-spacing: 1px;
+
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+/* ===== FORMULÁRIO ===== */
+
+form{
+    width: 100%;
+    max-width: 500px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.35);
+}
+
+/* ===== LABELS ===== */
+
+label{
+    display: block;
+
+    margin-bottom: 8px;
+    margin-top: 18px;
+
+    color: #1e293b;
+
+    font-weight: 600;
+
+    font-size: 15px;
+}
+
+/* ===== INPUTS E TEXTAREA ===== */
+
+input,
+textarea{
+    width: 100%;
+
+    padding: 14px;
+
+    border: 2px solid #d1d5db;
+
+    border-radius: 14px;
+
+    background-color: #f8fafc;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+/* ===== EFEITO AO CLICAR ===== */
+
+input:focus,
+textarea:focus{
+    outline: none;
+
+    border-color: #38bdf8;
+
+    background-color: white;
+
+    box-shadow: 0px 0px 12px rgba(56,189,248,0.4);
+}
+
+/* ===== TEXTAREA ===== */
+
+textarea{
+    resize: none;
+}
+
+/* ===== ÁREA DOS BOTÕES ===== */
+
+.botoes{
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+/* ===== BOTÃO ENVIAR ===== */
+
+button[type="submit"]{
+    flex: 1;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #06b6d4, #3b82f6);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0px 6px 18px rgba(59,130,246,0.4);
+}
+
+button[type="submit"]:hover{
+    transform: translateY(-3px);
+
+    box-shadow: 0px 10px 22px rgba(59,130,246,0.5);
+}
+
+/* ===== BOTÃO LIMPAR ===== */
+
+button[type="reset"]{
+    flex: 1;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0px 6px 18px rgba(239,68,68,0.4);
+}
+
+button[type="reset"]:hover{
+    transform: translateY(-3px);
+
+    box-shadow: 0px 10px 22px rgba(239,68,68,0.5);
+}

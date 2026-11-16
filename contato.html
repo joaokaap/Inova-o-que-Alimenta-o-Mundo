@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificação</title>
+    <link rel="stylesheet" href="styleform.css">
+</head>
+<body>
+            <nav class="button">
+      <a href="inicio.html"><button>Home</button></a>
+      <a href="historia.html"><button>História</button></a>
+      <a href="tecnologias.html"><button>Tecnológias</button></a>
+      <a href="sustentabilidade.html"><button>Sustentabilidade</button></a>
+      <a href="contato.html"><button>Contato</button></a>
+    </nav>
+
+    <form>
+        <label>Nome/Apelido:</label>
+        <input type="text"><br><br>
+
+        <label>Email:</label>
+        <input type="email"><br><br>
+
+        <label>Senha:</label>
+        <input type="password"><br><br>
+
+        <label>Turma:</label>
+        <input type="text"><br><br>
+
+        <label>Telefone:</label>
+        <input type="tel"id="telefone" 
+         name="telefone" 
+         placeholder="(XX) 9XXXX-XXXX" 
+         pattern="\(\d{2}\) \d{5}-\d{4}" 
+         required>
+
+        <label>Mensagem:</label>
+        <textarea id="mensage" name="mensage" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Enviar</button> 
+        <br><br>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>

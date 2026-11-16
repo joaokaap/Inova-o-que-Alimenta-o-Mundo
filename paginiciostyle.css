@@ -505,4 +505,31 @@ section {
 
     .carousel-item img {
         height: 230px;
-    }  
+    }
+}
+
+footer {
+    background-color: #0d542d;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #a29bfe;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 10px 0;
+}
